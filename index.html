@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Parallax Scrolling Website </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel = "stylesheet" href = "style.css" >
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ </head>
+ <body>
+<div class="paralax">
+   <img src="stars.png" id="stars" class=" animate__animated animate__fadeInDown">
+   <img src="rocket.png" id="mountains_behind">
+   <h1 id="text" align="center">Universe Explorer<br><span>Let's Explore the universe Together, we can see amazing things</span></h1>
+   <a href="#" id="button">Explore</a>
+   <img src="planet1.png" id="moontains_front">
+  </div>
+
+<div class="timelinee" >
+<h6 align="center" id="text1">The Begining of the universe</h6>
+ <ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-l" data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">The Big bang</span>
+			</div>
+			<div class="desc"><span class="time">13.8 Billion years Ago</span><br>Begining the space and time</div>
+		</div>
+	</li>
+  <li>
+		<div class="direction-r "data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Reionization era</span>
+			</div>
+			<div class="desc"><span class="time">13.8 Billion years Ago</span><br>Early stars start ionizing
+        interstellar gas     </div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l"data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Milky away Forms</span>
+			</div>
+			<div class="desc"><span class="time">12.6 Billion years Ago</span><br>galaxy where earth is</div>
+		</div>
+	</li>
+
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r"data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Supernova</span>
+			</div>
+			<div class="desc"><span class="time">12.1 Billion years Ago</span><br> oldest gamma ray</div>
+		</div>
+	</li>
+  <li>
+		<div class="direction-l"data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Kaptyen B</span>
+			</div>
+			<div class="desc"><span class="time">11.5 Billion years Ago</span><br>Oldest known exoplanet lying within the habitable zone</div>
+		</div>
+	</li>
+
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r" data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Universe start cool</span>
+			</div>
+			<div class="desc"><span class="time">11 Billion years Ago</span><br>Temperature average around 13000 K</div>
+		</div>
+	</li>
+  
+  <li>
+		<div class="direction-l"data-aos="zoom-in">
+			<div class="flag-wrapper">
+				<span class="flag">Oldest Polutation Start</span>
+			</div>
+			<div class="desc"><span class="time">10.5 Billion years Ago</span><br>First stars abundant in metals
+      </div>
+		</div>
+	</li>
+</ul>
+</div>
+
+
+<div class="gallery">
+  <main class="page-content"data-aos="fade-in">
+ <div class="card" >
+   <div class="content">
+     <h2 class="title">Milky Way Galaxy</h2>
+     <p class="copy">The appearance from Earth of the galaxy—a band of light</p>
+     <button class="btn">View More</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Andromeda Galaxy</h2>
+     <p class="copy">Andromeda, which is shortened from "Andromeda Galaxy", gets its name from the area of the sky in which it appears</p>
+     <button class="btn">View More</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Antennae Galaxies</h2>
+     <p class="copy">Appearance is similar to an insect's antennae.</p>
+     <button class="btn">view More</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Black eye Galaxy</h2>
+     <p class="copy">It has a spectacular dark band of absorbing dust in front of the galaxy's bright nucleus</p>
+     <button class="btn">view more</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Bode's Galaxy </h2>
+     <p class="copy">Named for Johann Elert Bode who discovered this galaxy in 1774.</p>
+     <button class="btn">View more</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Butterfly Galaxies</h2>
+     <p class="copy">Looks are similar to a butterfly.</p>
+     <button class="btn">View More</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Cartwheel Galaxy</h2>
+     <p class="copy">  Its visual appearance is similar to that of a spoked cartwheel</p>
+     <button class="btn">Book Now</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="content">
+     <h2 class="title">Cigar Galaxy</h2> 
+     <p class="copy">Appears similar in shape to a cigar.</p>
+     <button class="btn">View More</button>
+   </div>
+ </div>
+</main>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:400,
+    duration:1000
+  });
+</script>
+ <script>
+   let stars = document.getElementById('stars');
+   let mountains_behind = document.getElementById('mountains_behind');
+   let text = document.getElementById('text');
+   let button = document.getElementById('button');
+  
+  window.addEventListener ('scroll', function(){
+  let value = window.scrollY;
+  stars.style.left = value * 0.25 + 'px';
+  mountains_behind.style.top = value * -0.5 + 'px';
+  text.style.marginBottom = value * 1 + 'px';
+  button.style.marginBottom = value * 1 + 'px';})
+ </script>
+  </body>
+</html>
